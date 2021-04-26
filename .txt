@@ -1,0 +1,115 @@
+{note.map(( nota, index ) =>(
+                <div className="card card-main-note text-white" key={nota.nid}>{index}
+                <img src={e_tlax_img+nota.img_name} className="card-img card-img-main-note" alt={nota.img_name} />
+                <div className="card-img-overlay card-title-main-note__article">
+                    <Link href={`/${nota.alias}`}>
+                        <h3 className="card-title-main-note__title">{nota.title}</h3>
+                    </Link>
+                </div>
+            </div>
+            ))}
+            
+
+
+            <div className="card card-main-note text-white" >
+                <img src={e_tlax_img+notas.response[0].img_name} className="card-img card-img-main-note" alt={notas.response[0].img_name} />
+                <div className="card-img-overlay card-title-main-note__article">
+                    <Link href={`/${e_tlax_img+notas.response[0].alias}`}>
+                        <h3 className="card-title-main-note__title">{e_tlax_img+notas.response[0].title}</h3>
+                    </Link>
+                </div>
+            </div>
+            
+            <div className="scrolling-wrapper row flex-row flex-nowrap mt-1 wrapper-first-slider">
+                {notas.response.map((nota) =>(
+                    <div className="card card-first-slider text-white" key={nota.nid}>
+                        <img src={e_tlax_img+nota.img_name} className="card-img card-img-first-slider" alt="..." />
+                        <div className="card-img-overlay card-title-first-slider__article">
+                            <Link href={`/${nota.alias}`}>
+                                <h2 className="card-title card-title-first-slider__title">{nota.title}</h2>
+                            </Link>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            http://da21w.e-tlaxcala.mx/index.php/virales
+
+
+
+
+            <Head>
+                <title>{content.title}</title>
+                <meta name="description" content={content.sumario} />
+                <link rel="canonical" href={link_canonical+content.URL_ALIAS} />
+                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                <script 
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                        "@context":"https://schema.org",
+                        "@type": "NewsArticle",
+                        "mainEntityOfPage": {
+                            "@type":"WebPage",
+                            "@id": `${link_canonical+content.URL_ALIAS}`
+                        },
+                        "headline": `${content.title}`,
+                        "datePublished":"2021-04-15T13:48:14-05:00",
+                        "image": [
+                            images.map((image) =>(
+                                `${e_consulta_puebla_img+image.img_name}`
+                            ))
+                        ],
+                        "dateModified":"2021-04-15T15:42:18-05:00",
+                        "description": `${content.sumario}`,
+                        "articleSection": `${content.SECCION}`,
+                        "articleBody": `${content.cuerpo}`,
+                        "author": {
+                            "@type":"Person",
+                            "name": `${content.AUTOR}`
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+		                    "name": "e-consulta.com",
+                            "url": `${link_canonical}`,
+                            "logo": {
+                                "@type":"ImageObject",
+		                        "url":"https://www.e-consulta.com/assets/images/logo_02.png"
+                            },
+                            "sameAs": [
+                                "https://www.facebook.com/econsulta.noticias",
+		                        "https://twitter.com/e_consulta",
+		                        "https://www.youtube.com/user/videoeconsulta"
+                            ]
+                        }
+                    })}}
+                ></script>
+            </Head>
+            
+            <div className="row">
+                {images.length > 1 ? (
+                    <Slider {...setting}>
+                        {images.map((image, index) =>(
+                            <img className="img-fluid" src={e_consulta_puebla_img+image.img_name} alt={image.img_name} key={index} />
+                        ))}
+                    </Slider>
+                ) : (
+                    <img className="img-fluid" src={e_consulta_puebla_img+images[0].img_name} alt={images[0].img_name} />
+                )}
+            </div>
+            <div className="separador mx-2">
+                <span className="nota-seccion">{content.SECCION}</span>
+            </div>
+            <div className="row mx-2">
+                <div className="nota-title">
+                    <h1>{content.title}</h1>
+                </div>
+                <div className="nota-autor">
+                    {content.AUTOR}
+                </div>
+                {content.sumario ? (
+                    <div className="nota-sumario">
+                        {content.sumario}
+                    </div>
+                ) : <></>}
+                <div className="txtview text-justify" dangerouslySetInnerHTML={{__html: content.cuerpo}} />
+            </div>

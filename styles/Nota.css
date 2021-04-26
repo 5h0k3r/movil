@@ -1,0 +1,91 @@
+.slick-prev {
+    left: 0 !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 0 !important;
+}
+.separador{
+    display: block;
+
+}
+.nota-seccion{
+    font-size: 1rem;
+    color: #23375a;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Palanquin', sans-serif !important;
+}
+.nota-title h1{
+    font-size: 2rem !important;
+    font-weight: normal;
+    font-family: 'Palanquin', sans-serif !important;
+    width: 100% !important;
+}
+.nota-sumario{
+    font-size: 1rem;
+    color: #737373;
+    font-style: normal;
+    margin: 5px 0;
+    font-family: 'Palanquin', sans-serif !important;
+}
+.nota-autor{
+    font-size: 1rem;
+    color: #737373;
+    font-family: 'Palanquin', sans-serif !important;
+}
+.txtview{
+    width: 100% !important;
+    font-size: 1.25rem;
+    font-family: 'Palanquin', sans-serif !important;
+}
+/*CSS Notas RELATIVAS de RELACION no de RELATIVIDAD ya te la knows*/
+.relatives.container {
+    /*margin: 0;*/
+    padding: 0;
+}
+.r-head{
+  padding: 4px;
+  background-color: #23375a;
+  color: white;
+  font-weight:bold;
+  font-family: robotoMedium;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.r-el{
+  background-color: #939ca5;
+
+}
+.r-el a{
+  text-decoration: none;
+}
+.r-image img{
+  width: 100%;
+  padding: 12px;
+  padding-bottom: 3px;
+
+}
+
+.r-title{
+  color: white;
+  text-align: left;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-family: roboto;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.r-space{
+  margin-top: 10px;
+  background-color: white;
+  height: 2px;
+  width:100%;
+  text-align: center;
+}
+.entretenimiento .nota-seccion{
+  color: red;
+  font-weight: bold;
+}

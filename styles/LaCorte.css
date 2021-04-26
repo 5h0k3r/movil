@@ -1,0 +1,35 @@
+.corte{
+    /*height: 325px;*/
+    min-height: 325px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background: #23375a;
+    margin: auto;
+}
+.corte-head{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corte-img{
+    height: 200px;
+}
+.corte-article img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.corte-title{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Palanquin', sans-serif !important;
+}
+.corte-link{
+    text-decoration: none;
+}

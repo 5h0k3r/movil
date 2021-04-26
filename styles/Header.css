@@ -1,0 +1,75 @@
+.sidebar,
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar {
+  left: -100%;
+  max-width: 300px;
+  transition: all ease 0.25s;
+  overflow-y: auto;
+  z-index: 1032;
+}
+.overlay {
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+  z-index: 1031;
+}
+.navbar{
+  padding-bottom: 0 !important;
+}
+.menu{
+  background-color: #23375a !important;
+}
+.link-item{
+  width: 100% !important;
+  display: block !important;
+}
+.link-item a{
+  width: 100% !important;
+  display: block !important;
+}
+
+.scrollmenu {
+  background-color: #23375a;
+  overflow: auto;
+  white-space: nowrap;
+  height: 25px !important;
+  margin-top: 10px;
+}
+.scrollmenu a {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 26px;
+  color: white;
+  padding: 0px 10px;
+  text-decoration: none;
+}
+.scrollmenu a:hover {
+  background-color: #777;
+}
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 992px) {
+  .sidebar {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    flex-direction: row;
+    max-width: 100%;
+    transform: none;
+    transition: none;
+    overflow-y: visible;
+    z-index: auto;
+  }
+}

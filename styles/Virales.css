@@ -1,0 +1,52 @@
+.virales .card-header{
+    padding: 0px 0px;
+}
+.virales .card-title{
+    position: absolute;
+    bottom: 5px;
+    background-color: #ffffffd1;
+    padding: 5px 0px;
+    border-radius: 14px;
+    text-align: center;
+}
+.virales .fst-virales{
+    height: 14rem;
+}
+.separador {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: .8rem;
+    margin-top: .5rem;
+}
+.separador > .line {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background-color: red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.separador > .title {
+    background-color: white;
+    max-width: fit-content;
+    margin: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.gente-logo {
+    height: 35px;
+    width: 35px;
+    background-image: url("https://www.e-consulta.com/assets/css/logos/laviruela.svg"),linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.separador .name {
+    display: inline-block;
+    vertical-align: middle;
+    color: #23375b;
+}

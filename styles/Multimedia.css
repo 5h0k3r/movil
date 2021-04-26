@@ -1,0 +1,19 @@
+.mas_video{
+    height: 300px;
+    overflow: hidden scroll;
+}
+.mas_video article{
+    cursor: pointer;
+}
+.opinion-multimedia {
+    height: 35px;
+    width: 35px;
+    background-image: url(https://www.e-consulta.com/assets/css/logos/icono%20multimedia.svg),linear-gradient(transparent, transparent);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+.slick-dots {
+    bottom: -10px!important;
+}
